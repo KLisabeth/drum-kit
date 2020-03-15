@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 function keyDown(e) {
     debugger;
     const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
@@ -7,3 +8,14 @@ function keyDown(e) {
     audio.play();
     key.classList.add("playing");
 };
+=======
+function keyDown(e) {
+  debugger;
+  const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+  const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
+  if (!audio) return;
+  audio.currentTime = 0;
+  audio.play();
+  key.classList.add("playing");
+};
+>>>>>>> Stashed changes
